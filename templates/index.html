@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FinPulse — Proactive Financial Wellness for YONO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">⚡</span>
+    <div>
+      <div class="brand-name">FinPulse</div>
+      <div class="brand-sub">Proactive Financial Wellness · YONO</div>
+    </div>
+  </div>
+  <div class="topbar-actions">
+    <button id="runPipelineBtn" class="btn btn-primary">Run Daily Scan</button>
+    <button id="resetBtn" class="btn btn-ghost">Reset Demo</button>
+  </div>
+</header>
+
+<main class="layout">
+
+  <!-- ============ LEFT: YONO PHONE MOCKUP ============ -->
+  <section class="phone-column">
+    <div class="phone-frame">
+      <div class="phone-notch"></div>
+      <div class="phone-screen">
+
+        <div class="yono-header">
+          <div class="yono-top-row">
+            <span class="yono-logo">yono <span class="dot">●</span> SBI</span>
+            <span class="yono-icons">⋯</span>
+          </div>
+          <div class="yono-greeting">Hi <span id="userName">Krishnav</span> 👋</div>
+        </div>
+
+        <div class="balance-cards" id="balanceCards"></div>
+
+        <div class="section-label">Upcoming</div>
+        <div class="schedule-list" id="scheduleList"></div>
+
+        <div class="section-label">FinPulse for you</div>
+        <div id="nudgeFeed" class="nudge-feed">
+          <div class="empty-state">
+            No nudges yet — tap <strong>Run Daily Scan</strong> to let the
+            agents analyze your account.
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <p class="phone-caption">Live prototype — every screen above is driven by the agent pipeline on the right.</p>
+  </section>
+
+  <!-- ============ RIGHT: MULTI-AGENT CONTROL ROOM ============ -->
+  <section class="control-room">
+    <div class="panel">
+      <div class="panel-title">Multi-Agent Pipeline</div>
+      <div class="agent-row" id="agentRow">
+        <div class="agent-node" data-agent="Observer Agent">
+          <div class="agent-icon">🛰️</div>
+          <div class="agent-label">Observer</div>
+          <div class="agent-status">idle</div>
+        </div>
+        <div class="agent-arrow">→</div>
+        <div class="agent-node" data-agent="Insight Agent">
+          <div class="agent-icon">🧠</div>
+          <div class="agent-label">Insight</div>
+          <div class="agent-status">idle</div>
+        </div>
+        <div class="agent-arrow">→</div>
+        <div class="agent-node" data-agent="Decision Agent">
+          <div class="agent-icon">⚖️</div>
+          <div class="agent-label">Decision</div>
+          <div class="agent-status">idle</div>
+        </div>
+        <div class="agent-arrow">→</div>
+        <div class="agent-node" data-agent="Action Agent">
+          <div class="agent-icon">⚡</div>
+          <div class="agent-label">Action</div>
+          <div class="agent-status">idle</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title">Pipeline Trace</div>
+      <div id="traceLog" class="trace-log">
+        <div class="trace-empty">No run yet.</div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title">Feedback Loop — Relevance Weights</div>
+      <div id="feedbackStats" class="feedback-stats">
+        <div class="trace-empty">Act on a nudge to see weights adjust.</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
