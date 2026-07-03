@@ -146,3 +146,11 @@ git push -u origin main
 If the repo doesn't exist yet on GitHub, create it first (empty, no
 README/license so it doesn't conflict with this one) at
 `https://github.com/new`, then run the commands above.
+
+## Live demo
+
+- Deployed on Railway: https://web-production-ae2da.up.railway.app/
+
+You can open the URL above to see the running prototype. If you'd like me
+to add a badge or configure environment variables for the deployed
+instance, tell me which values to include and I will update the repo.
