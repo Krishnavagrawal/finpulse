@@ -1,4 +1,4 @@
-## FinPulse — Proactive Financial Wellness Agent for SBI YONO
+# FinPulse — Proactive Financial Wellness Agent for SBI YONO
 
 FinPulse is a lightweight, AI-style financial wellness prototype that helps users make better money decisions by surfacing timely nudges from their financial activity. The experience is built around a four-agent pipeline that watches account behaviour, turns events into insights, scores them for relevance, and delivers actionable recommendations.
 
