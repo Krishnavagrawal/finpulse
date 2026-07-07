@@ -2,6 +2,12 @@
 
 FinPulse is a lightweight, AI-style financial wellness prototype that helps users make better money decisions by surfacing timely nudges from their financial activity. The experience is built around a four-agent pipeline that watches account behaviour, turns events into insights, scores them for relevance, and delivers actionable recommendations.
 
+## Problem Statement
+
+Many users miss bill payments, keep idle money in savings accounts, or forget recurring investments. Traditional banking apps require users to actively search for financial information instead of proactively guiding them.
+
+FinPulse addresses this by continuously monitoring financial activity and delivering intelligent, context-aware recommendations through an AI-inspired multi-agent pipeline.
+
 ## Why this project matters
 
 - Detects idle cash and suggests moving it to a liquid fund
@@ -9,15 +15,17 @@ FinPulse is a lightweight, AI-style financial wellness prototype that helps user
 - Highlights paused SIPs that may need a reminder
 - Turns financial signals into clear nudges instead of waiting for the user to search manually
 
-## Problem Statement
-
-Many users miss bill payments, keep idle money in savings accounts, or forget recurring investments. Traditional banking apps require users to actively search for financial information instead of proactively guiding them.
-
-FinPulse addresses this by continuously monitoring financial activity and delivering intelligent, context-aware recommendations through an AI-inspired multi-agent pipeline.
-
 ## About
 
 Built as a prototype for the SBI Hackathon, FinPulse demonstrates how proactive financial wellness can be delivered through an AI-inspired multi-agent architecture integrated with digital banking workflows.
+
+## Features
+
+- Proactive financial nudges for everyday banking behaviour
+- Multi-agent pipeline with visible trace output
+- Mock external-service actions such as fund investment, bill payment, and SIP starts
+- Feedback-driven scoring that adapts over time
+- Flask-based prototype with a simple, interactive web interface.
 
 ## Live screenshots
 
@@ -56,14 +64,6 @@ The backend exposes POST /api/run-pipeline/<user_id>, which runs the full flow i
 5. The feedback loop adjusts future scoring based on accept and dismiss behaviour.
 
 The UI shows the trace of each step so the agent hand-off is visible in real time.
-
-## Features
-
-- Proactive financial nudges for everyday banking behaviour
-- Multi-agent pipeline with visible trace output
-- Mock external-service actions such as fund investment, bill payment, and SIP starts
-- Feedback-driven scoring that adapts over time
-- Flask-based prototype with a simple, interactive web interface
 
 ## Running locally
 
