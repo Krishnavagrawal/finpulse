@@ -15,6 +15,10 @@ Many users miss bill payments, keep idle money in savings accounts, or forget re
 
 FinPulse addresses this by continuously monitoring financial activity and delivering intelligent, context-aware recommendations through an AI-inspired multi-agent pipeline.
 
+## About
+
+Built as a prototype for the SBI Hackathon, FinPulse demonstrates how proactive financial wellness can be delivered through an AI-inspired multi-agent architecture integrated with digital banking workflows.
+
 ## Live screenshots
 
 The screenshots below are captured from the live demo site so visitors can quickly see the experience in action.
