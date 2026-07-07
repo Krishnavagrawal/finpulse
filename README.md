@@ -21,6 +21,12 @@ The screenshots below are captured from the live demo site so visitors can quick
 
 ![FinPulse dashboard overview](screenshots/finpulse-home.png)
 
+## AI Pipeline
+<img width="1411" height="810" alt="Ru  Daily Scan " src="https://github.com/user-attachments/assets/2f9fd3ac-71ff-48b1-953e-93925b8e036a" />
+<img width="1413" height="813" alt="Pay Now" src="https://github.com/user-attachments/assets/ca1f757a-4e76-4203-b579-2134a889eea2" />
+<img width="1412" height="796" alt="Reset Demo" src="https://github.com/user-attachments/assets/40bda108-abca-461d-b199-35bcc62d279f" />
+
+
 ## Architecture → Code map
 
 | Diagram block | Code |
