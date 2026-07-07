@@ -1,3 +1,9 @@
+## Problem Statement
+
+Many users miss bill payments, keep idle money in savings accounts, or forget recurring investments. Traditional banking apps require users to actively search for financial information instead of proactively guiding them.
+
+FinPulse addresses this by continuously monitoring financial activity and delivering intelligent, context-aware recommendations through an AI-inspired multi-agent pipeline.
+
 # FinPulse — Proactive Financial Wellness Agent for SBI YONO
 
 FinPulse is a lightweight, AI-style financial wellness prototype that helps users make better money decisions by surfacing timely nudges from their financial activity. The experience is built around a four-agent pipeline that watches account behaviour, turns events into insights, scores them for relevance, and delivers actionable recommendations.
